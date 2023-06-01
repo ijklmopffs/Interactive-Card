@@ -1,0 +1,190 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+}
+main {
+  display: flex;
+}
+.background {
+  background-image: url(./images/bg-main-desktop.png);
+  height: 93.9vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.front {
+  position: relative;
+  left: 20%;
+}
+.back {
+  position: relative;
+  left: 17%;
+}
+.no {
+  position: relative;
+  left: 96%;
+  bottom: 51%;
+  color: white;
+  font-size: 18px;
+}
+.card_details {
+  color: white;
+  position: absolute;
+  top: 9%;
+  height: 245px;
+  width: 400px;
+  left: 24%;
+}
+.parent {
+  position: relative;
+}
+.zeros {
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details h1 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.details p {
+  font-size: 14px;
+}
+.payment_component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cardholder_name {
+  margin-bottom: 10px;
+}
+.label_name {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: hsl(278, 68%, 11%);
+}
+.name {
+  cursor: pointer;
+  padding: 7px;
+  padding-right: 100px;
+  border-radius: 4px;
+  border: 1px solid hsl(270, 3%, 87%);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 150px;
+  font-family: "Space Grotesk";
+}
+.name:focus {
+  border: 1px solid hsl(249, 99%, 64%);
+  outline: none;
+}
+.name::placeholder {
+  color: hsl(270, 3%, 87%);
+  font-size: 12px;
+  margin: 10px;
+  font-family: "Space Grotesk";
+}
+.double {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.month {
+  cursor: pointer;
+  width: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid hsl(270, 3%, 87%);
+  margin-top: 5px;
+  font-family: "Space Grotesk";
+}
+.month:focus {
+  border: 1px solid hsl(249, 99%, 64%);
+  outline: none;
+}
+.month::placeholder {
+  font-family: "Space Grotesk";
+  color: hsl(270, 3%, 87%);
+}
+.cvc_number {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid hsl(270, 3%, 87%);
+  cursor: pointer;
+}
+.cvc_number::placeholder {
+  font-family: "Space Grotesk";
+  color: hsl(270, 3%, 87%);
+}
+.cvc_number:focus {
+  border: 1px solid hsl(249, 99%, 64%);
+  outline: none;
+}
+button {
+  padding: 10px 50px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+  margin-top: 10px;
+  width: 255px;
+  font-weight: 900;
+  font-family: "Space Grotesk";
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+  .background {
+    background-image: url(./images/bg-main-mobile.png);
+    background-size: cover;
+    height: 200px;
+    width: 94%;
+  }
+  .front {
+    width: 300px;
+    top: 127%;
+    left: 0%;
+  }
+  .card_details {
+    width: 285px;
+    left: 4%;
+    top: 130%;
+  }
+  .no {
+    left: 81%;
+    bottom: 76%;
+    width: 85px;
+  }
+  .zeros {
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+  .back {
+    left: 5%;
+    bottom: 25%;
+  }
+  .back img {
+    width: 300px;
+  }
+  .payment_component {
+    margin-top: 160px;
+    margin-bottom: 20px;
+  }
+}
