@@ -6,11 +6,9 @@ const zeros = document.querySelector(".zeros");
 labelName.addEventListener("input", (e) => {
   const input = e.target.value;
   title.textContent = input;
-  console.log("worked");
 });
 
 cardNumber.addEventListener("input", (e) => {
   const input = e.target.value;
   zeros.textContent = input;
-  console.log("worked");
 });

@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/ijklmopffs/Interactive-Card)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://inter-card-active.netlify.app/)
 
 ## My process
 
